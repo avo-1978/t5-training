@@ -54,6 +54,7 @@ or (if there is something wrong with using `requirements.txt`):
 ## Usage
 
 * Use the desired scripts like:
+  * `cd pure-python`
   * `python inference-t5.py`
   * `python train-t5_valid-loss.py`
   * `python inference-t5-finetuned.py`
