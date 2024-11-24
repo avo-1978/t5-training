@@ -36,6 +36,7 @@
 ## Make a Virtual Environment with Python 3.8 Version
 
 * Enter the directory where you have cloned the project
+* `cd pure-python`
 * `python3.8 -m venv venv`
 * `source venv/bin/activate`
 
