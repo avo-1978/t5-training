@@ -36,6 +36,7 @@
 ## Make a Virtual Environment with Python 3.8 Version
 
 * Enter the directory where you have cloned the project
+* `cd pure-python`
 * `python3.8 -m venv venv`
 * `source venv/bin/activate`
 
@@ -53,8 +54,18 @@ or (if there is something wrong with using `requirements.txt`):
 
 ## Usage
 
-* Use the desired scripts like:
+* Using the "offline" verions:
+ * Unzip the models in the models/t5-small directory:
+  * `sudo apt install p7zip-full`
+  * `cd pure-python/models/t5-small`
+  * `7z x t5-small.7z.001`
+ * Run the "no-internet" scripts:
+  * `python3.8 inference-t5_no-internet.py`
+  * ...
+
+* Use the "online" versions (downloads from huggingface site):
   * `cd pure-python`
-  * `python inference-t5.py`
-  * `python train-t5_valid-loss.py`
-  * `python inference-t5-finetuned.py`
+  * `python3.8 inference-t5.py`
+  * `python3.8 train-t5_valid-loss.py`
+  * `python3.8 inference-t5-finetuned.py`
+  * ...
