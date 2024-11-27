@@ -11,6 +11,13 @@
 
 # Setup GitHub T5-Training Repository and Project
 
+## Cerificates
+
+* If certificates are needed be sure you have them in:
+  * `/usr/local/share/ca-certificates`
+* `sudo apt install --reinstall ca-certificates`
+* `sudo update-ca-certificates`
+
 ## Compile and Install Python 3.8.9 from Source
 
 * `sudo apt update`
@@ -31,6 +38,7 @@
 
 ## Clone the Project with Git
 
+* `sudo apt install git`
 * `https://github.com/avo-1978/t5-training.git`
 
 ## Make a Virtual Environment with Python 3.8 Version
@@ -44,6 +52,8 @@
 
 * Use `requirements.txt` in the pure-python directory:
   * `pip install -r requirements.txt`
+* Note: if there are still certificates problems with pip not seeing them set the certificates path in the environment variable.
+  * `export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt' 
 
 or (if there is something wrong with using `requirements.txt`):
 
